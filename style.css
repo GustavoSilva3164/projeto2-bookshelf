@@ -4,15 +4,27 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
-    padding: 20px;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    padding: 20px;
 }
+
 .container {
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.btn, .rounded {
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.btn {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -21,29 +33,59 @@ header {
     font-size: 16px;
     margin-top: 10px;
     border-radius: 50px;
+    font-weight: bold;
 }
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 .categories .rounded {
     background-color: #62b6ff;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin: 5px;
     border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
 }
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: black;
+
+.ver-mais {
+    background-color: black;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
+
+.ver-mais:hover {
+    background-color: #333;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
+
 .image-container img {
     max-width: 50%;
     height: auto;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 14px;
 }
