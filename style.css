@@ -1,8 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 header {
@@ -15,6 +22,7 @@ header {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 hr {
@@ -34,6 +42,24 @@ hr {
     margin-top: 10px;
     border-radius: 50px;
     font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
 }
 
 .categories {
@@ -41,6 +67,7 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .categories .rounded {
@@ -52,6 +79,11 @@ hr {
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.categories .rounded:hover {
+    background-color: #4a90e2;
 }
 
 .ver-mais {
@@ -68,18 +100,6 @@ hr {
 
 .ver-mais:hover {
     background-color: #333;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.image-container img {
-    max-width: 50%;
-    height: auto;
 }
 
 footer {
