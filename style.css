@@ -1,19 +1,21 @@
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
 header {
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
 }
+
 .container {
     padding: 20px;
 }
-.btn, .rounded {
+
+.btn {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -23,27 +25,55 @@ header {
     margin-top: 10px;
     border-radius: 50px;
 }
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .categories .rounded {
     background-color: #62b6ff;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin: 5px;
     border-radius: 50px;
+    font-size: 16px;
 }
+
+.ver-mais {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.ver-mais:hover {
+    background-color: #333;
+}
+
 footer {
     margin-top: 20px;
     padding: 10px;
     background: black;
     color: white;
 }
+
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
+
 .image-container img {
     max-width: 50%;
     height: auto;
